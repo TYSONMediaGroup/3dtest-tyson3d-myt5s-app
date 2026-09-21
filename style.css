@@ -95,10 +95,10 @@ html, body {
 /* TYSON Media Group Banner Logo (Bottom Right, 50% Transparent) */
 #tyson-banner {
   position: fixed;
-  bottom: 18px;
-  right: 24px;
-  width: 210px;
-  max-width: 28vw;
+  bottom: 20px;
+  right: 28px;
+  width: 460px;
+  max-width: 48vw;
   height: auto;
   opacity: 0.5;
   pointer-events: none;

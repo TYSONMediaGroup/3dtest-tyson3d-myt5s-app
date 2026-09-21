@@ -92,7 +92,7 @@ html, body {
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
 }
 
-/* TYSON Media Group Banner Logo (Bottom Right, 50% Transparent) */
+/* TYSON Media Group Banner Logo (Bottom Right, Full Opacity) */
 #tyson-banner {
   position: fixed;
   bottom: 20px;
@@ -100,7 +100,7 @@ html, body {
   width: 460px;
   max-width: 48vw;
   height: auto;
-  opacity: 0.5;
+  opacity: 1;
   pointer-events: none;
   z-index: 20;
 }

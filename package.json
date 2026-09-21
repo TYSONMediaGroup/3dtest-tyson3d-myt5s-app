@@ -5,7 +5,7 @@
   "main": "game.js",
   "scripts": {
     "start": "python3 -m http.server 8000",
-    "build": "mkdir -p dist/lib && cp index.html style.css game.js t5s-project-background.png dist/ && cp lib/three.min.js dist/lib/ 2>/dev/null || true",
+    "build": "mkdir -p dist/lib && cp index.html style.css game.js t5s-project-background.png TYSONMediaGroupBanner.png dist/ && cp lib/three.min.js dist/lib/ 2>/dev/null || true",
     "deploy": "echo 'Static deployment ready'"
   },
   "keywords": [

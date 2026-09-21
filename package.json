@@ -1,0 +1,21 @@
+{
+  "name": "3dtest-tyson3d-myt5s-app",
+  "version": "1.0.0",
+  "description": "3D Environment with Stickman and Drivable Car - TYSON Media Group",
+  "main": "game.js",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "build": "mkdir -p dist/lib && cp index.html style.css game.js t5s-project-background.png dist/ && cp lib/three.min.js dist/lib/ 2>/dev/null || true",
+    "deploy": "echo 'Static deployment ready'"
+  },
+  "keywords": [
+    "tyson3d",
+    "stickman",
+    "car",
+    "threejs",
+    "3d",
+    "webgl"
+  ],
+  "author": "TYSON Media Group",
+  "license": "ISC"
+}

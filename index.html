@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>TYSON 3D World - Stickman & Car</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="lib/three.min.js"></script>
+  <script>
+    if (typeof THREE === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\\/script>');
+    }
+  </script>
+</head>
+<body>
+  <!-- T5S Project Background Splash (visible for 2 seconds) -->
+  <div id="t5s-splash"></div>
+
+  <!-- 3D Canvas -->
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- UI Overlay -->
+  <div id="ui-container">
+    <div class="top-bar">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span id="mode-text">🚶 On Foot (Stickman)</span>
+      </div>
+    </div>
+
+    <!-- Interaction Prompt -->
+    <div id="prompt-card">
+      <span class="key">E</span>
+      <span id="prompt-text">Drive Car</span>
+    </div>
+
+    <div class="bottom-bar">
+      <!-- Controls HUD -->
+      <div class="controls-card" id="controls-hint">
+        <div class="row">
+          <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> / <kbd>Arrows</kbd>
+          <span id="move-desc">Walk & Turn</span>
+        </div>
+        <div class="row">
+          <kbd>Space</kbd>
+          <span id="space-desc">Jump</span>
+        </div>
+        <div class="row" id="sprint-row">
+          <kbd>Shift</kbd>
+          <span>Sprint</span>
+        </div>
+        <div class="row" id="interact-row">
+          <kbd>E</kbd>
+          <span>Enter / Exit Car</span>
+        </div>
+        <div class="row">
+          <span>Mouse Drag to Orbit Camera</span>
+        </div>
+      </div>
+
+      <!-- Speedometer for Car -->
+      <div id="speedometer">
+        <span id="speed-val">0</span>
+        <span id="speed-unit">MPH</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

@@ -137,6 +137,7 @@ class Car {
   constructor() {
     this.mesh = new THREE.Group();
     this.x = 0;
+    this.y = 0;
     this.z = -3;
     this.rotY = 0;
     this.speed = 0;
@@ -326,7 +327,7 @@ window.addEventListener('load', () => {
         car.z - Math.cos(car.rotY) * 7.5
       );
       camera.position.lerp(carBack, 0.12);
-      camera.lookAt(car.x, car.y + 1, car.z);
+      camera.lookAt(new THREE.Vector3(car.x, car.y + 1, car.z));
     }
 
     renderer.render(scene, camera);
